@@ -1,0 +1,66 @@
+{
+  "name": "@rootvector/smart-retry",
+  "version": "0.1.0",
+  "description": "A lightweight, production-grade async retry utility with exponential backoff, jitter, timeout, and abort support.",
+  "type": "module",
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/esm/index.js",
+  "types": "./dist/esm/index.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/esm/index.d.ts",
+        "default": "./dist/esm/index.js"
+      },
+      "require": {
+        "types": "./dist/cjs/index.d.ts",
+        "default": "./dist/cjs/index.js"
+      }
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "build:esm": "tsc -p tsconfig.json",
+    "build:cjs": "tsc -p tsconfig.cjs.json && echo '{\"type\":\"commonjs\"}' > dist/cjs/package.json",
+    "build": "npm run clean && npm run build:esm && npm run build:cjs",
+    "clean": "rm -rf dist",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "retry",
+    "typescript",
+    "backoff",
+    "exponential-backoff",
+    "resilience",
+    "async",
+    "error-handling",
+    "jitter",
+    "timeout",
+    "abort"
+  ],
+  "author": "Naveed Khan <dxbnaveed.k@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rootvector2/SmartRetry.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rootvector2/SmartRetry/issues"
+  },
+  "homepage": "https://github.com/rootvector2/SmartRetry#readme",
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.0",
+    "vitest": "^4.0.18"
+  }
+}
