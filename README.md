@@ -3,6 +3,7 @@
 [![npm version](https://img.shields.io/npm/v/@rootvector/smart-retry.svg)](https://www.npmjs.com/package/@rootvector/smart-retry)
 [![npm downloads](https://img.shields.io/npm/dm/@rootvector/smart-retry.svg)](https://www.npmjs.com/package/@rootvector/smart-retry)
 [![CI](https://github.com/rootvector2/SmartRetry/actions/workflows/ci.yml/badge.svg)](https://github.com/rootvector2/SmartRetry/actions)
+[![coverage](https://img.shields.io/badge/coverage-94%25-brightgreen)](https://github.com/rootvector2/SmartRetry)
 [![License](https://img.shields.io/npm/l/@rootvector/smart-retry.svg)](LICENSE)
 
 Async functions fail. Networks drop, servers return 500s, rate limits kick in. SmartRetry wraps any async function with configurable retry logic — exponential backoff, jitter, global timeouts, and cancellation via `AbortSignal` — so you don't have to write that boilerplate again.
