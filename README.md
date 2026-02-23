@@ -260,3 +260,19 @@ npm run build
 ## License
 
 MIT
+
+## Support
+
+SmartRetry is maintained as open-source infrastructure software.
+
+If it provides value in your projects, consider supporting its long-term maintenance:
+
+👉 https://opencollective.com/SmartRetry
+
+Contributions help fund:
+- Ongoing maintenance and bug fixes
+- Test infrastructure and CI
+- Documentation improvements
+- Performance validation and benchmarking
+
+All development remains public and transparent.
