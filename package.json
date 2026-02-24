@@ -57,6 +57,12 @@
     "url": "https://github.com/rootvector2/SmartRetry/issues"
   },
   "homepage": "https://github.com/rootvector2/SmartRetry#readme",
+  "funding": [
+    {
+      "type": "github",
+      "url": "https://github.com/sponsors/rootvector2"
+    }
+  ],
   "engines": {
     "node": ">=18"
   },
